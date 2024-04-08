@@ -1,0 +1,21 @@
+ul.usrLive_View {
+  margin: 0px;
+  padding: 0px;
+}
+ul.usrLive_View li {
+  background-color: rgb(110, 110, 110);
+  margin: 0px 10px 10px 0px;
+  padding: 10px;
+  height: 120px;
+}
+ul.usrLive_View li img.usrLive_Thmb, ul.usrLive_View li div {
+  display: inline-block;
+}
+ul.usrLive_View li img.usrLive_Thmb {
+  width: 150px;
+  height: 100px;
+  float: left;
+}
+ul.usrLive_View li div {
+  margin: 0px 0px 0px 10px;
+}

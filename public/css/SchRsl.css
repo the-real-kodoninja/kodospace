@@ -1,0 +1,30 @@
+.SchRsl_cnt {
+  padding: 10px;
+  cursor: pointer;
+}
+.SchRsl_cnt:hover {
+  background-color: #585858;
+}
+.SchRsl_cnt div img, .SchRsl_cnt div svg {
+  display: inline-block;
+}
+.SchRsl_cnt div img {
+  border: 1px solid #fff;
+  margin: 0px 10px 0px 0px;
+}
+.SchRsl_cnt div img.schImg_1 {
+  width: 25px;
+  height: 25px;
+}
+.SchRsl_cnt div img.schImg_2 {
+  width: 50px;
+  height: 25px;
+}
+.SchRsl_cnt div svg {
+  height: 18px;
+  width: auto;
+  float: right;
+}
+.SchRsl_cnt div svg:nth-child(1) {
+  margin: 0px 0px 0px 5px;
+}

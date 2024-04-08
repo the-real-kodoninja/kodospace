@@ -1,0 +1,23 @@
+$background-color_2: rgb(110 110 110);
+
+ul.usrLive_View {
+    margin: 0px;
+    padding: 0px;
+    li {
+        background-color: $background-color_2;
+        margin: 0px 10px 10px 0px;
+        padding: 10px;
+        height: 120px;
+        img.usrLive_Thmb, div {
+            display: inline-block;
+        }
+        img.usrLive_Thmb {
+            width: 150px;
+            height: 100px;
+            float: left;
+        }
+        div {
+            margin: 0px 0px 0px 10px;
+        }
+    }
+}

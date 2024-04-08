@@ -1,0 +1,52 @@
+html {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background-color: #f1f1f1;
+}
+
+.p5 {
+  padding: 5px;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.pA {
+  position: absolute;
+}
+
+.dI {
+  display: inline-block;
+}
+
+.dN {
+  display: none;
+}
+
+.fR {
+  float: right;
+}
+
+.fL {
+  float: left;
+}

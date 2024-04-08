@@ -1,0 +1,33 @@
+.usrPlay_View {
+  width: 100%;
+  background-color: rgb(110, 110, 110);
+  border-radius: 6px;
+  height: 112px;
+  margin: 0px 0px 15px 0px;
+}
+.usrPlay_View ul {
+  margin: 0px;
+  padding: 0px;
+}
+.usrPlay_View ul li {
+  padding: 10px;
+  margin: 0px;
+}
+.usrPlay_View ul li .usrPlay_VidVw .usrPlay_VidThmb {
+  display: inline-block;
+  height: auto;
+  width: 152px;
+  position: absolute;
+  border: 1px solid #fff;
+}
+.usrPlay_View ul li .usrPlay_VidVw .usrPlay_VidThmb img {
+  height: auto;
+  width: 150px;
+}
+
+.usrPlay_CntMre {
+  width: auto;
+  margin: -63px 0px 0px 162px;
+  padding: 2px;
+  position: absolute;
+}

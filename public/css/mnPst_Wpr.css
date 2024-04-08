@@ -1,0 +1,44 @@
+.mnPst_Wpr {
+  background-color: rgb(110, 110, 110);
+  max-width: 475px;
+  margin: 0px 20px 20px 0px;
+  display: inline-grid;
+  border-radius: 6px;
+}
+.mnPst_Wpr .mnPst_Hdr, .mnPst_Wpr .mnPst_Bdy, .mnPst_Wpr .mnPst_Ftr {
+  padding: 10px;
+}
+.mnPst_Wpr ul.mnPst_Mnu {
+  background-color: #fff;
+  color: #222;
+  list-style: none;
+  font-size: 12px;
+  margin: 0px 0px 0px -62px;
+  border-radius: 6px;
+}
+.mnPst_Wpr ul.mnPst_Mnu li {
+  display: block;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.mnPst_Wpr ul.mnPst_Mnu li:hover {
+  background-color: #434343;
+  color: #fff;
+}
+
+.svg-style, .mnPst_Wpr .mnPst_Hdr svg, .mnPst_Wpr .mnPst_Bdy svg, .mnPst_Wpr .mnPst_Ftr svg {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.mnPst_HdrImg_1 {
+  border-radius: 6px;
+  border: 1px solid #fff;
+  background: center/cover no-repeat;
+  height: 30px;
+  width: 30px;
+  margin: 0px 10px 0px 0px;
+}

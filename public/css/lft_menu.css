@@ -1,0 +1,36 @@
+nav.Lft_menu {
+  border-right: 1px solid #37373f;
+  box-shadow: 4px 0 5px rgba(41, 38, 38, 0.2);
+  width: auto;
+}
+nav.Lft_menu ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+nav.Lft_menu ul li {
+  padding: 5px 10px;
+}
+nav.Lft_menu ul li:hover {
+  background-color: rgb(110, 110, 110);
+  cursor: pointer;
+}
+nav.Lft_menu ul li svg {
+  width: 23px;
+  height: 25px;
+  display: inline-block;
+  margin: 0px 10px 0px 0px;
+}
+
+.L_usrHdr {
+  height: 50px;
+}
+
+.L_uImgHdr {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  background-repeat: none;
+  border: 2px solid #565659;
+  float: left;
+}

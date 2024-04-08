@@ -1,0 +1,31 @@
+import { useState, useEffect } from 'react';
+import Head from 'next/head';
+import Lft_menu from '../components/lft_menu'; 
+
+function MyApp({ Component, pageProps }) {
+    const [bodyColor, setBodyColor] = useState(''); // Set initial color
+    const isSignupPage = Component.displayName === 'register';
+    const handleSignupPage = () => {
+        setBodyColor('#3d4347'); 
+    };
+
+    useEffect(() => {
+        if (isSignupPage) {
+            handleSignupPage();
+        }
+    }, [isSignupPage]);
+
+    return (
+        <>
+            <Head>
+					<link rel="stylesheet" href="/css/main.css" />
+				</Head>
+            <div style={{ backgroundColor: bodyColor }}>
+                <Component {...pageProps} />
+                <Lft_menu />
+            </div>
+        </>
+    );
+}
+
+export default MyApp;

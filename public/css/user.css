@@ -1,0 +1,46 @@
+.usrPgeHdr {
+  width: auto;
+  display: inline;
+  position: absolute;
+  padding: 10px;
+}
+.usrPgeHdr .usrPgeHdr_Info {
+  margin: 30px 0px 0px 30px;
+  left: 0;
+  right: 0;
+  height: 220px;
+}
+.usrPgeHdr .usrPgeHdr_Info .usrPgeHdr_usrStat {
+  margin: 0px 0px 0px 10px;
+}
+.usrPgeHdr .usrPgeHdr_Info img.usrPgeHdr_usrImg {
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background: center/cover no-repeat;
+  height: 150px;
+  width: 150px;
+  float: left;
+}
+.usrPgeHdr .usrPgeHdr_Info .usrPgeHdr_btns {
+  margin: 129px 18px 0px 0px;
+}
+.usrPgeHdr .usrPgeHdr_Info .usrPgeHdr_btns button, .usrPgeHdr .usrPgeHdr_Info .usrPgeHdr_btns svg {
+  display: inline-block;
+}
+.usrPgeHdr .usrPgeHdr_Info .usrPgeHdr_btns svg {
+  height: 25px;
+  width: 25px;
+  margin: 0px 0px 0px 5px;
+}
+.usrPgeHdr .usrPgeHdr_Info .usrPgeHdr_btns button {
+  background-color: darkslategray;
+  border-radius: 6px;
+  margin: 0px 0px 0px 5px;
+  padding: 5px 9px;
+  font-size: 14px;
+}
+.usrPgeHdr .usrPgeBnr {
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+}

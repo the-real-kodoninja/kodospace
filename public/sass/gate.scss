@@ -1,0 +1,58 @@
+$color_1: #fff;
+$color_2: #333;
+$background-color_1: #2a2a2a;
+$background-color_2: #fff;
+$background-color_3: darkred;
+
+input {
+	padding: 10px;
+	border: none;
+}
+.gateForm {
+	div {
+		display: block;
+		margin: 0px 0px 10px;
+	}
+}
+body {
+	background-color: $background-color_1;
+	color: $color_1;
+}
+.wtWpr {
+	width: 295px;
+	margin: 50px auto 0px;
+}
+.wtHdr {
+	margin: 100px 0px 0px 0px;
+	text-align: center;
+}
+.wtMem {
+	background-color: $background-color_2;
+	color: $color_2;
+	border-radius: 6px;
+	padding: 10px;
+	height: auto;
+	border: 1px solid #ccc;
+}
+.btn1 {
+	background-color: $background-color_3;
+	color: $color_1;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	margin: 10px 0px 0px;
+}
+.GFooter {
+	margin: 10px 0px 0px;
+	a {
+		color: $color_1;
+		text-decoration: none;
+		margin: 0px 5px 0px 0px;
+	}
+}
+footer {
+	a {
+		color: $color_1;
+		text-decoration: none;
+		margin: 0px 5px 0px 0px;
+	}
+}

@@ -1,0 +1,13 @@
+kodospace was founded & developed by Emmanuel Moore{Immanuel Taylor} in 2020 using PHP/JS. It's redevelopment took place on 03/31/2024 using various js libaries, sass/tailwind and python/mongodb on the backend; code stack found below. 
+
+It's development (Aviyon/kodoverse) team coming q4 2024/q1 2025 will assist in kodospace and the kodoverse development availiable to the public...
+
+{core languages}
+
+- frontend
+- - react.js, next.js, node.js, typescript.js
+- - tailwind, sass
+
+- backend
+- - python
+- - mongodb

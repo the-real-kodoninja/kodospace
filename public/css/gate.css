@@ -1,0 +1,56 @@
+input {
+  padding: 10px;
+  border: none;
+}
+
+.gateForm div {
+  display: block;
+  margin: 0px 0px 10px;
+}
+
+body {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.wtWpr {
+  width: 295px;
+  margin: 50px auto 0px;
+}
+
+.wtHdr {
+  margin: 100px 0px 0px 0px;
+  text-align: center;
+}
+
+.wtMem {
+  background-color: #fff;
+  color: #333;
+  border-radius: 6px;
+  padding: 10px;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.btn1 {
+  background-color: darkred;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin: 10px 0px 0px;
+}
+
+.GFooter {
+  margin: 10px 0px 0px;
+}
+.GFooter a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0px 5px 0px 0px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0px 5px 0px 0px;
+}
