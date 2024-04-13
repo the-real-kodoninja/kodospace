@@ -2,7 +2,7 @@
 .MHeader {
   border-bottom: 1px solid #37373f;
   box-shadow: 4px 0 5px rgba(41, 38, 38, 0.2);
-  background-color: #2a2a2a;
+  background-color: #131313;
   top: 0;
   left: 0;
   right: 0;
@@ -37,7 +37,7 @@
   margin: 0px 0px 0px 36px;
 }
 .MinCnt input[type=search] {
-  background-color: rgb(110, 110, 110);
+  background-color: #252525;
   padding: 0px;
   margin: 0px 0px 0px 0px;
   width: 100%;

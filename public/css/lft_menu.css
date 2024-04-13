@@ -1,7 +1,15 @@
 nav.Lft_menu {
   border-right: 1px solid #37373f;
   box-shadow: 4px 0 5px rgba(41, 38, 38, 0.2);
-  width: auto;
+  width: 250px;
+  padding: 0px 0px 0px 45px;
+  transition: width 0.3s ease;
+}
+nav.Lft_menu a {
+  color: #fff;
+}
+nav.Lft_menu a:hover {
+  text-decoration: none;
 }
 nav.Lft_menu ul {
   list-style: none;
@@ -10,6 +18,12 @@ nav.Lft_menu ul {
 }
 nav.Lft_menu ul li {
   padding: 5px 10px;
+}
+nav.Lft_menu ul li a {
+  color: #fff;
+}
+nav.Lft_menu ul li a:hover {
+  text-decoration: none;
 }
 nav.Lft_menu ul li:hover {
   background-color: rgb(110, 110, 110);

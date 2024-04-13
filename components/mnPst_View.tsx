@@ -23,7 +23,7 @@ export default function MnPst_View () {
 
     return (
         <Fragment>
-            <div className="dI" style={{width: 'auto', display: 'inline'}}>
+            <div className="dI" style={{width: 'auto', display: 'ruby'}}>
                 {Object.entries(mainPostData).map(([key, value]) => (
                 <div key={value.pid} className="mnPst_Wpr dI w100">
                     <div className="mnPst_Hdr">

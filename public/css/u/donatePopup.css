@@ -1,0 +1,60 @@
+.donatePopup {
+  border-radius: 6px;
+  min-height: 380px;
+  height: auto;
+  width: 400px;
+  position: fixed;
+  background-color: rgba(43, 39, 39, 0.9);
+  display: flex;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.donatePopup .donateForm {
+  padding: 10px;
+}
+.donatePopup .donateForm .radio-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+.donatePopup .donateForm .radio-group .radio-option {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  cursor: pointer;
+}
+.donatePopup .donateForm .radio-group .radio-option.selected {
+  background-color: rgb(128, 73, 73);
+  background-color: rgb(128, 73, 73);
+}
+.donatePopup .amount-option {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  cursor: pointer;
+}
+.donatePopup .amount-option.selected {
+  border: 1px solid rgb(128, 73, 73);
+}
+.donatePopup input[type=text], .donatePopup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  color: #000;
+  border-radius: 6px;
+  margin: 0px 0px 10px 0px;
+}
+.donatePopup .donateSbmtBtn button {
+  display: block;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+}
+.donatePopup .donateSbmtBtn button:nth-child(1) {
+  background-color: rgb(128, 73, 73);
+}
+.donatePopup .donateSbmtBtn button:nth-child(2) {
+  background-color: darkslategray;
+}

@@ -12,9 +12,17 @@ $color_1: #fff;
 @import "notiView.css";
 @import "footer.css";
 @import "user.css";
+@import "messages.css";
 // user modules
 @import "u/usrPge_Live.css";
 @import "u/usrPge_Play.css";
+@import "u/usrPge_Story.css";
+@import "u/usrPge_Fllw.scss";
+@import "u/usrPge_Subscribe.css";
+@import "u/usrPge_About.css";
+@import "u/donatePopup.css";
+@import "u/postModal.css";
+@import "m/pstGlb_mod.css";
 
 html,body {
 	max-height: 100vh;  /* Limit height to 80% of viewport height */
@@ -27,6 +35,9 @@ main {
 
 .cntr_wrp {
 	margin: 0px auto;
+	justify-content: center;
+	display: ruby;
+	align-items: center;
 }
 
 .mnVwbdy {

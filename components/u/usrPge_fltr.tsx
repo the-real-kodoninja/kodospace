@@ -1,10 +1,14 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState, useEffect } from  'react';
 // temp user call modules
 import UsrPge_Post from './usrPge_Post.tsx'; // post
 import UsrPge_Live from './usrPge_Live.tsx'; // live
 import UsrPge_Play from './usrPge_Play.tsx'; // play
+import UsrPge_Story from './usrPge_Story.tsx'; // play
+import UsrPge_Subscribe from './usrPge_Subscribe.tsx'; // subscribe
+import { UsrPge_Followers,UsrPge_Following } from './usrPge_Fllw.tsx'; // followers/following
+import UsrPge_About from './usrPge_About.tsx'; // about
 
-export default function usrPge_fltr({ items, onFilterClick }) {
+export default function usrPge_fltr({ items, onFilterClick, selectedFilter: initialFilter }) {
   
   const filterItems = [
     'post',
@@ -14,42 +18,59 @@ export default function usrPge_fltr({ items, onFilterClick }) {
     'stories',
     'followers',
     'following',
-    'Subscribers',
+    'subscribe',
+    'about'
   ];
 
-  const [selectedFilter, setSelectedFilter] = useState('post'); // Initial filter
+  const [selectedFilter, setSelectedFilter] = useState(initialFilter || 'post'); // Use initialFilter or default to 'post'onst [selectedFilter, setSelectedFilter] = useState(initialFilter || 'post'); // Use initialFilter or default to 'post'
+  useEffect(() => {
+    // Fetch initial data based on initialFilter or default filter
+    handleClick(selectedFilter);
+  }, [selectedFilter]); // Depend on selectedFilter to re-run when it changes
   const [content, setContent] = useState(null);
   const [isLoading, setIsLoading] = useState(false); // Track loading state
 
 
-  const handleClick = async (filter) => {
+  const handleClick = (filter) => {
     setSelectedFilter(filter);
     setIsLoading(true); // Set loading state to true
-
+  
     if (onFilterClick) {
       onFilterClick(filter); // Optional call to provided function
     }
-
-    setSelectedFilter(filter);
-    setIsLoading(true);
   
-    // Call the appropriate user module based on filter
-    let fetchedContent;
+    // Set the appropriate user module component based on filter
+    let ComponentToRender;
     switch (filter) {
       case 'post':
-        fetchedContent = await UsrPge_Post(); // Call UsrPge_Post.tsx component
+        ComponentToRender = UsrPge_Post;
         break;
       case 'live':
-        fetchedContent = await UsrPge_Live(); // Call UsrPge_Live.tsx component
+        ComponentToRender = UsrPge_Live;
         break;
       case 'playlist':
-        fetchedContent = await UsrPge_Play(); // Call UsrPge_Play.tsx component
+        ComponentToRender = UsrPge_Play;
+        break;
+      case 'stories':
+        ComponentToRender = UsrPge_Story;
+        break;
+      case 'followers':
+        ComponentToRender = UsrPge_Followers;
+        break;
+      case 'following':
+        ComponentToRender = UsrPge_Following;
+        break;
+      case 'subscribe':
+        ComponentToRender = UsrPge_Subscribe;
+        break;
+      case 'about':
+        ComponentToRender = UsrPge_About;
         break;
       default:
-        fetchedContent = null; // Handle default case
+        ComponentToRender = null; // Handle default case
     }
   
-    setContent(fetchedContent);
+    setContent(() => ComponentToRender);
     setIsLoading(false);
   };
 
@@ -60,7 +81,7 @@ export default function usrPge_fltr({ items, onFilterClick }) {
 
   return (
     <>
-      <div>
+      <div style={{ margin: '0px 0px 20px 0px' }}>
         <ul className="hdr-fltr" style={{ margin: '8px 0px 0px' }}>
           {Object.entries(filterItems).map(([key, value]) => (
             <li
@@ -78,15 +99,16 @@ export default function usrPge_fltr({ items, onFilterClick }) {
       </div>
       {/* Div to display content */}
       {isLoading ? (
-				<p>Loading content...</p>
+        <div className="cntr_wrp dI p10">Loading content...</div>
 				) : content ? (
-				<div className="cntr_wrp dI pA p10" style={{ margin: "290px 0px 0px" }}>
+				<div className="cntr_wrp dI p10" style={{ width: '100%' }}>
 					{/* Render the fetched content here */}
-					{content}
+          {content ? React.createElement(content) : "No content available for this filter."}
+          
 				</div>
 				) : (
-				<p>No content available for this filter.</p>
-			)}	
+        <div className="cntr_wrp dI p10">No content available for this filter.</div>
+			)}
     </>
   );
 }
