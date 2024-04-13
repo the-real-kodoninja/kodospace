@@ -1,0 +1,306 @@
+.pstGlb_modView {
+  padding: 10px;
+  margin: 15px 15px;
+  border-radius: 50%;
+  background-color: #804949;
+  color: #fff;
+  position: fixed;
+  float: right;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.pstGlb_modView svg {
+  width: 30px;
+  height: 30px;
+}
+.pstGlb_modView:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background-color: darkslategray;
+  transition-delay: 0.2s;
+}
+
+.pstGlb_modViewAll {
+  margin: 15px 15px;
+  border-radius: 6px;
+  background-color: #252525;
+  color: #fff;
+  position: fixed;
+  float: right;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1), 10px 0 20px rgba(0, 0, 0, 0.1), -10px 0 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.pstGlb_modViewAll .pstGlb_modViewAll, .pstGlb_modViewAll .pstGlb_scroll {
+  height: 400px;
+}
+.pstGlb_modViewAll .pstGlb_scroll {
+  overflow-y: scroll;
+}
+.pstGlb_modViewAll .pstGlb_mod_Hdr .fR svg {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin: 0px 10px 0px 0px;
+}
+.pstGlb_modViewAll .pstGlb_mod_Hdr, .pstGlb_modViewAll ul.pstGlb_mod_Bdy, .pstGlb_modViewAll ul.pstGlb_mod_Bdy li {
+  padding: 10px;
+}
+.pstGlb_modViewAll ul.pstGlb_mod_Bdy {
+  margin: 0px;
+  padding: 0px;
+}
+.pstGlb_modViewAll ul.pstGlb_mod_Bdy .usrMsgSender_Rgt {
+  margin: 0px 0px 0px 10px;
+  height: 50px;
+  display: contents;
+}
+.pstGlb_modViewAll ul.pstGlb_mod_Bdy .usrMsgSender_Rgt .usrMsgSender_Bdy {
+  height: 30px;
+  overflow: hidden;
+}
+
+ul.pstGlb_mod_Bdy li {
+  height: 70px;
+  overflow: hidden;
+}
+ul.pstGlb_mod_Bdy li:hover {
+  background-color: gray;
+}
+ul.pstGlb_mod_Bdy li img.usrImgmsg_Sender {
+  float: left;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 0px 10px 0px 0px;
+}
+
+.messagePopupBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.messagePopup {
+  background-color: #131313;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.messagePopup .messagePopupHeader {
+  margin-bottom: 15px;
+  height: 40px;
+}
+.messagePopup .messagePopupHeader .profilePhoto {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  float: left;
+}
+.messagePopup .messagePopupHeader .username, .messagePopup .messagePopupHeader .date {
+  margin: 0 10px;
+}
+.messagePopup .messagePopupHeader .closePopup {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 16px;
+}
+.messagePopup .messagePopupHeader .closePopup svg {
+  width: 20px;
+  height: 20px;
+}
+.messagePopup .messagePopupBody .toInput, .messagePopup .messagePopupBody .subjectInput, .messagePopup .messagePopupBody .messageTextarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #252525;
+  border-radius: 4px;
+}
+.messagePopup .messagePopupBody .messageTextarea {
+  height: 100px;
+  resize: vertical;
+}
+.messagePopup .messagePopupBody .attachments {
+  margin: 0px 0px 20px 0px;
+}
+.messagePopup .messagePopupBody .attachments svg {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px 0px 0px;
+  display: inline-block;
+}
+.messagePopup .messagePopupBody .sendButton {
+  width: 100%;
+  background-color: #804949;
+  color: #fff;
+  padding: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.messagePopup .messagePopupBody .sendButton:hover {
+  background-color: #704040;
+}
+
+.messageArea {
+  background-color: #131313;
+}
+.messageArea .glblScroll_2 {
+  overflow-y: scroll;
+  height: 341px;
+}
+.messageArea .glb_msgSend_1 {
+  padding: 10px;
+}
+.messageArea .glb_msgSend_1 .glb_msgSend_1a {
+  display: inline-block;
+}
+.messageArea .glb_msgSend_1 .glb_msgSend_1a img {
+  width: 40px;
+  height: 40px;
+  margin: 0px 10px 0px 0px;
+  float: left;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.messageArea .glb_msgSend_1 .glb_msgSend_1b {
+  border-radius: 6px;
+  background-color: #5a5a5a;
+  padding: 15px;
+  margin: -10px 5px 15px 47px;
+}
+.messageArea .glb_msgSend_2 {
+  padding: 10px;
+}
+.messageArea .glb_msgSend_2 .glb_msgSend_2a {
+  display: inline-block;
+}
+.messageArea .glb_msgSend_2 .glb_msgSend_2a img {
+  width: 40px;
+  height: 40px;
+  margin: 0px 0px 0px 5px;
+  float: right;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.messageArea .glb_msgSend_2 .glb_msgSend_2b {
+  border-radius: 6px;
+  background-color: #735050;
+  padding: 15px;
+  margin: 32px 48px 15px 5px;
+}
+.messageArea .messageInputArea textarea {
+  width: 100%;
+  padding: 5px 35px 10px 10px;
+  height: 60px;
+  overflow: hidden;
+  background-color: #252525;
+  border-radius: 4px;
+}
+.messageArea .messageInputArea textarea:focus {
+  outline: none;
+}
+.messageArea .messageInputArea .attachments {
+  margin: 0px 0px 20px 0px;
+}
+.messageArea .messageInputArea .attachments svg {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px 0px 0px;
+  display: inline-block;
+}
+.messageArea .messageInputArea .glb_msgFtr {
+  position: relative;
+  margin: -55px 0px 0px 0px;
+}
+.messageArea .messageInputArea .glb_msgFtr svg {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px 0px 0px;
+  display: block;
+}
+
+.selectedUserDetails {
+  background-color: #131313;
+}
+.selectedUserDetails .glblUsrSeldtl_Hdr {
+  padding: 20px 0px 0px;
+  margin: 0px auto 20px;
+  text-align: center;
+  display: grid;
+}
+.selectedUserDetails .glblUsrSeldtl_Hdr .userName {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px 0px 10px 0px;
+}
+.selectedUserDetails .glblUsrSeldtl_Hdr img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 0px 0px 10px 10px;
+}
+.selectedUserDetails .glblUsrSeldtl_Bdy ul li {
+  padding: 12px;
+  display: block;
+}
+.selectedUserDetails .glblUsrSeldtl_Bdy ul li svg {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px 0px 0px;
+  display: inline-block;
+}
+
+.pstGlb_mod_Bdy li {
+  position: relative;
+}
+.pstGlb_mod_Bdy li:hover .settingOptionsIcon {
+  display: block;
+}
+
+.settingOptionsIcon {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.dropdownMenu {
+  top: 100%;
+  width: 150px;
+  height: 150px;
+  float: right;
+}
+.dropdownMenu ul {
+  background-color: #fff;
+  position: fixed;
+  color: #222;
+  z-index: 1;
+  border-radius: 6px;
+}
+.dropdownMenu ul li {
+  font-size: 14px;
+  height: auto;
+}
+.dropdownMenu ul li:hover {
+  color: #fff;
+}

@@ -1,0 +1,86 @@
+$background-color_2: #252525;
+
+.topSupPnl, .usrSubTeir, .loadMoreBtn {
+    width: 100%;
+    max-width: 648px;
+}
+
+.topSupPnl {
+    margin: 0px 0px 10px;
+        .loadMoreBtn {
+            border-radius: 6px;
+            padding: 10px;
+            background-color: #252525;
+        }
+    .topSupPnl_Usr {
+        margin: 10px 0px 20px;
+        div img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            display: inline-block;
+        }
+        div span {
+            margin: 0px 0px 0px 10px;
+        }
+        .fR {
+            button {
+                margin: 0px 0px 0px 10px;
+                padding: 4px 12px;
+                border: 1px solid #fff;
+                border-radius: 6px;
+                &:hover {
+                    background-color: #804949;
+                }
+            }
+        }
+    }
+}
+
+.usrSubCreateBtn {
+    background-color: darkslategray;
+    margin: 10px 0px 0px;
+    border-radius: 6px;
+}
+
+.topSupPnl, form.createSubTeir, .SubView_Wpr {
+    background-color: $background-color_2;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+form.createSubTeir {
+    margin: 10px 0px;
+    h2 {
+        margin: 0px 0px 10px;
+        font-size: 18px;
+    }
+    input, textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        color: #111;
+    }
+    button {
+        display: block;
+    }
+}
+
+
+.SubView_Wpr, .subView_Sub {
+    margin: 0px 0px 10px 0px;
+}
+.SubView_Wpr {
+    text-align: center;
+    .subView_Btn {
+        background-color: #804949;
+        color: #fff;
+        width: 100%;
+        padding: 10px;
+    }
+}

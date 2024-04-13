@@ -1,7 +1,6 @@
 import { React,Fragment,useState, useEffect } from 'react';
 import Head from 'next/head';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import UserPage from './user.jsx'; // Import the UserPage component
 
 function KodospaceApp({ Component, pageProps }) {
     const [isMounted, setIsMounted] = useState(false);
@@ -26,14 +25,6 @@ function KodospaceApp({ Component, pageProps }) {
                 <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
             </Head>
             <Component {...pageProps} />
-            {/* {isMounted && (
-            <Router>
-                <Routes>
-                    <Route path="/@:username" element={<UserPage />} />
-                    <Route path="/" element={<Component {...pageProps} />} />
-                </Routes>
-            </Router>
-            )} */}
         </>
     );
 }

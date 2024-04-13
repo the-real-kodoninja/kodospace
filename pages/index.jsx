@@ -6,6 +6,8 @@ import MnPst_View from '../components/mnPst_View.tsx'
 import Rgt_View from '../components/rgt_View.tsx';
 import MFooter from '../components/footer.tsx'; 
 import axios from 'axios';
+// post global modules
+import PstGlb_Mod from '../components/m/pstGlb_mod.tsx';
  
 export default function home () {
 	const [data, setData] = useState([]);
@@ -23,7 +25,8 @@ export default function home () {
 					</div>
 				</div>
 			</main>
+			<PstGlb_Mod/>
 			<MFooter/>
 		</Fragment>
  	)
- }
+ } 

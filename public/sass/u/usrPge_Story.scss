@@ -1,0 +1,19 @@
+.usrStory_View, .usrStory_ViewInr{
+    display: inline-block;
+ }
+.usrStory_View {
+    .usrStory_ViewInr {
+        width: 185px;
+        height: 300px;
+        margin: 0px 10px 10px 0px;
+        background-color: #252525;
+        border-radius: 6px;
+        img {
+            width: 100%;
+            height: 100%;
+            background-repeat: none;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.usrFllw_Wpr {
+    height: 100px;
+    width: 300px;
+    margin: 0px 10px 10px 0px;
+    display: inline-block;
+    .usrFllw_Img {
+        height: 100px;
+        width: 100px;
+        float: left;
+    }
+    .usrFllw_Rgt {
+        margin: 0px 0px 0px 10px;
+        display: inline-block;
+    }
+    .usrFllw_Btn {
+        padding: 6px 12px;
+        background-color: rgb(110, 110, 110);
+        color: #fff;
+        border-radius: 6px;
+    }
+}

@@ -1,0 +1,65 @@
+$background-color_2: #252525;
+
+.donatePopup {
+    border-radius: 6px;
+    min-height: 380px;
+    height: auto;
+    width: 400px;
+    position: fixed;
+    background-color: rgb(43 39 39 / 90%); 
+    display: flex;
+    z-index: 999; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .donateForm {
+        padding: 10px;
+        .radio-group {
+            display: flex;
+            margin-bottom: 10px;
+          
+            .radio-option {
+              margin-right: 10px;
+              padding: 10px;
+              border: 1px solid #d1d1d1;
+              cursor: pointer;
+          
+              &.selected {
+                background-color: rgb(128, 73, 73);
+                background-color: rgb(128, 73, 73);
+              }
+            }
+          }
+    }
+    .amount-option {
+        margin-right: 10px;
+        padding: 10px;
+        border: 1px solid #d1d1d1;
+        cursor: pointer;
+    }
+    
+    .amount-option.selected {
+        border: 1px solid rgb(128, 73, 73);
+    }
+    input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #d1d1d1;
+        color: #000;
+        border-radius: 6px;
+        margin: 0px 0px 10px 0px;
+    }
+    .donateSbmtBtn button {
+        display: block;
+        margin: 0px 0px 10px 0px;
+        padding: 10px;
+        border-radius: 6px;
+        width: 100%;
+        &:nth-child(1) {
+            background-color: rgb(128, 73, 73);
+        }
+        &:nth-child(2) {
+            background-color: darkslategray;
+        }
+    }
+}
