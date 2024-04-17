@@ -1,0 +1,44 @@
+.video-player {
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.controls_Wpr {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+input[type=range] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  background: #804949;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #804949;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: -5px 0px 0px 0px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #e3e3e3;
+}
+
+.controls_Ftr {
+  font-size: 12px;
+  margin: 0px 0px 0px 5px;
+}

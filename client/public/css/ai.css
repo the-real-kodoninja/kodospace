@@ -1,0 +1,27 @@
+.ai_ViewTxt_Wpr {
+  display: flex; /* Activate Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+.ai_ViewTxt_Wpr h1 {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+}
+.ai_ViewTxt_Wpr p {
+  margin: 10px auto;
+}
+.ai_ViewTxt_Wpr ol {
+  list-style: auto;
+}
+.ai_ViewTxt_Wpr ol li {
+  display: block;
+  margin: 10px auto;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #252525;
+  cursor: pointer;
+}
+.ai_ViewTxt_Wpr ol li:hover {
+  background-color: rgba(161, 161, 161, 0.1019607843);
+}

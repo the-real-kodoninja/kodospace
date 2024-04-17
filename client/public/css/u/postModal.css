@@ -1,0 +1,82 @@
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+.modalBackdrop .modalContent {
+  background-color: #131313;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.modalBackdrop .modalContent .modalCntHdr {
+  margin: 0px 0px 10px 0px;
+}
+.modalBackdrop .modalContent .modalCntHdr svg {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px 0px 0px;
+  display: inline-block;
+}
+.modalBackdrop .modalContent .modalCntHdr img.userImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  float: left;
+  margin: 0px 5px 0px 0px;
+}
+.modalBackdrop .modalContent form textarea {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #252525;
+  border-radius: 4px;
+}
+.modalBackdrop .modalContent form input[type=submit] {
+  width: 100%;
+  background-color: #804949;
+  color: #fff;
+  padding: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.modalBackdrop .modalContent form input[type=submit]:hover {
+  background-color: #704040;
+}
+.modalBackdrop .modalContent form .option-select {
+  display: inline-block;
+  position: relative;
+}
+.modalBackdrop .modalContent form .option-select select {
+  background-color: transparent;
+  font-size: inherit;
+  cursor: pointer;
+}
+.modalBackdrop .modalContent form .option-select select:focus {
+  outline: none;
+  border-color: #ccc;
+}
+.modalBackdrop .modalContent form .option-select select option {
+  color: #111;
+  background-color: transparent;
+}
+.modalBackdrop .modalContent form .modalCntFtr {
+  margin: 0px 0px 20px 0px;
+}
+.modalBackdrop .modalContent form .modalCntFtr svg {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px 0px 0px;
+  display: inline-block;
+}

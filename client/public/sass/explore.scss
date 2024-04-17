@@ -1,0 +1,117 @@
+$color_1: #fff;
+$background-color_1: #131313;
+$background-color_2: #252525;
+$background-color_3: #ba5858;
+
+.expView_Wpr, .expView_Hdr {
+    width: 100%;
+}
+
+.expView_Wpr {
+    max-width: 648px;
+    .expView_Hdr {
+        h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: $color_1;
+            margin: 0px 0px 15px 0px;
+        }
+        .expView_Sch {
+            svg {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                margin: 8px 0px 0px 7px;
+            }
+            input[type="search"] {
+                background-color: $background-color_2;
+                border-radius:15px;
+                padding: 0px;
+                margin: 0px 0px 0px 0px;
+                width: 100%;
+                height: 35px;
+                text-indent: 32px;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.expView_Video, .expView_Users, .expView_Shorts {
+    border-radius: 15px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-Items: center;
+    width: 900px;
+    ul {
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: $color_1;
+            margin: 0px 0px 15px 0px;
+        }
+        li {
+            display: inline-block;
+            margin: 0px 15px 11px 0px;
+            border-radius: 15px;
+            cursor: pointer;
+            &:hover {
+                background-color: #a1a1a11a;
+            }
+            .expView_VideosList, .expView_UserList, .expView_ShortList {
+                display: flex;
+                flex-wrap: wrap; /* Allows items to wrap to the next line */
+                gap: 20px; /* Adjust the space between items */
+                justify-content: center; /* Center the items horizontally */
+            }
+            .expView_VidThumb, .expView_UsrThumb, .expView_ShortThumb { 
+                overflow: hidden;
+                border-radius: 6px;
+            }
+            .expView_VidThumb {
+                width: 285px;
+                height: 170px; 
+            }
+            .expView_UsrThumb {
+                width: 210px;
+                height: 210px; 
+            }
+            .expView_ShortThumb {
+                width: 164px;
+                height: 250px; 
+                background-color: #3d4347;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .expView_VidInfo {
+                margin: 10px 0px 0px;
+                img {
+                    float: left;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    margin: 0px 10px 0px 0px;
+                }
+                .expView_VidTitle {
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+                .expView_VidDate {
+                    font-size: 13px;
+                }
+            } 
+            .expView_UsrInfo {
+                margin: 10px 0px 0px;
+            }
+            .expView_ShortInfo {
+                margin: 10px 0px 0px 0px;
+            
+            }
+        }
+    }
+}

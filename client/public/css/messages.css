@@ -1,0 +1,166 @@
+.message-viewer {
+  display: flex; /* Make divs side-by-side */
+  height: 91vh; /* Full viewport height */
+  width: 100%;
+}
+
+.msgListScroll, .msgContentScroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.msgListScroll {
+  height: 84vh;
+}
+
+.msgContentScroll {
+  height: 63vh;
+}
+
+.message-list {
+  flex: 2; /* Left div takes remaining space */
+  border-right: 1px solid #37373f;
+  box-shadow: 4px 0 5px rgba(41, 38, 38, 0.2);
+}
+.message-list .msgList_Hdr {
+  padding: 10px;
+  border-bottom: 1px solid #37373f;
+  box-shadow: 4px 0 5px rgba(41, 38, 38, 0.2);
+}
+.message-list .msgList_Hdr .msgList_HdrRgt svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.message-list ul.msgList_View li {
+  padding: 10px;
+  border-bottom: 1px solid #262626;
+  cursor: pointer;
+}
+.message-list ul.msgList_View li:hover {
+  background-color: darkslategray;
+}
+.message-list ul.msgList_View li:hover .settingOptionsIcon_Full {
+  display: block;
+}
+.message-list ul.msgList_View li img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  float: left;
+  margin: 5px 5px 0px 0px;
+}
+.message-list ul.msgList_View li .msgList_VwRgt {
+  display: grid;
+}
+.message-list ul.msgList_View li .msgList_VwRgt .settingOptionsIcon_Full {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+.message-list ul.msgList_View li .msgList_VwRgt .dropdownMenu {
+  height: auto;
+}
+
+.message-content {
+  flex: 4; /* Right div takes 3 times the space */
+  padding: 10px;
+}
+.message-content .msgContent_View .msgContent_VwHdr {
+  margin: 0px 0px 20px 0px;
+}
+.message-content .msgContent_View .msgContent_VwHdr img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 0px 10px 0px 0px;
+  float: left;
+}
+.message-content .msgContent_View .msgContent_VwBdy .msgCnt_Usr1, .message-content .msgContent_View .msgContent_VwBdy .msgCnt_Usr2 {
+  border-radius: 6px;
+  padding: 15px;
+  width: 60%;
+  margin: 0px 0px 20px 0px;
+}
+.message-content .msgContent_View .msgContent_VwBdy .msgCnt_Usr1 {
+  background-color: #5a5a5a;
+}
+.message-content .msgContent_View .msgContent_VwBdy .msgCnt_Usr2 {
+  background-color: #662d2d;
+  margin-left: auto;
+}
+.message-content .msgContent_defaultVw {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin: 50px auto;
+}
+.message-content .msgContent_defaultVw h3 {
+  font-size: 22px;
+  font-weight: 600;
+  display: block;
+  margin: 0px 0px 20px 0px;
+}
+.message-content .msgContent_defaultVw select {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.message-content .msgContent_defaultVw select:hover {
+  border-color: #b3b3b3;
+}
+.message-content .msgContent_defaultVw select:focus {
+  outline: none;
+  border-color: #999999;
+}
+.message-content .msgContent_defaultVw select option {
+  padding: 5px;
+}
+.message-content .msgContent_txtFtr textarea {
+  width: 100%;
+  padding: 5px 35px 10px 10px;
+  height: 100px;
+  overflow: hidden;
+  background-color: #252525;
+  border-radius: 4px;
+}
+.message-content .msgContent_txtFtr:focus {
+  outline: none;
+}
+.message-content .msgContent_txtFtr .attachments {
+  margin: -77px 0px 20px 0px;
+  float: right;
+  position: relative;
+}
+.message-content .msgContent_txtFtr .attachments svg {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px 7px 0px;
+  display: block;
+}
+
+/* Optional: Resizing Styles */
+.resizer {
+  width: 5px;
+  height: 100%; /* Matches viewport height */
+  cursor: col-resize; /* Resize cursor */
+  position: relative;
+  right: -5px; /* Position at right edge of left div */
+  top: 0;
+}
+
+.resizer:after {
+  content: "";
+  position: absolute;
+  background-color: #ddd;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}

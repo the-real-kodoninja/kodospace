@@ -1,0 +1,105 @@
+.expView_Wpr, .expView_Hdr {
+  width: 100%;
+}
+
+.expView_Wpr {
+  max-width: 648px;
+}
+.expView_Wpr .expView_Hdr h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0px 0px 15px 0px;
+}
+.expView_Wpr .expView_Hdr .expView_Sch svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 8px 0px 0px 7px;
+}
+.expView_Wpr .expView_Hdr .expView_Sch input[type=search] {
+  background-color: #252525;
+  border-radius: 15px;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 35px;
+  text-indent: 32px;
+}
+.expView_Wpr .expView_Hdr .expView_Sch input[type=search]:focus {
+  outline: none;
+}
+
+.expView_Video, .expView_Users, .expView_Shorts {
+  border-radius: 15px;
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  align-Items: center;
+  width: 900px;
+}
+.expView_Video ul h2, .expView_Users ul h2, .expView_Shorts ul h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0px 0px 15px 0px;
+}
+.expView_Video ul li, .expView_Users ul li, .expView_Shorts ul li {
+  display: inline-block;
+  margin: 0px 15px 11px 0px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.expView_Video ul li:hover, .expView_Users ul li:hover, .expView_Shorts ul li:hover {
+  background-color: rgba(161, 161, 161, 0.1019607843);
+}
+.expView_Video ul li .expView_VideosList, .expView_Video ul li .expView_UserList, .expView_Video ul li .expView_ShortList, .expView_Users ul li .expView_VideosList, .expView_Users ul li .expView_UserList, .expView_Users ul li .expView_ShortList, .expView_Shorts ul li .expView_VideosList, .expView_Shorts ul li .expView_UserList, .expView_Shorts ul li .expView_ShortList {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 20px; /* Adjust the space between items */
+  justify-content: center; /* Center the items horizontally */
+}
+.expView_Video ul li .expView_VidThumb, .expView_Video ul li .expView_UsrThumb, .expView_Video ul li .expView_ShortThumb, .expView_Users ul li .expView_VidThumb, .expView_Users ul li .expView_UsrThumb, .expView_Users ul li .expView_ShortThumb, .expView_Shorts ul li .expView_VidThumb, .expView_Shorts ul li .expView_UsrThumb, .expView_Shorts ul li .expView_ShortThumb {
+  overflow: hidden;
+  border-radius: 6px;
+}
+.expView_Video ul li .expView_VidThumb, .expView_Users ul li .expView_VidThumb, .expView_Shorts ul li .expView_VidThumb {
+  width: 285px;
+  height: 170px;
+}
+.expView_Video ul li .expView_UsrThumb, .expView_Users ul li .expView_UsrThumb, .expView_Shorts ul li .expView_UsrThumb {
+  width: 210px;
+  height: 210px;
+}
+.expView_Video ul li .expView_ShortThumb, .expView_Users ul li .expView_ShortThumb, .expView_Shorts ul li .expView_ShortThumb {
+  width: 164px;
+  height: 250px;
+  background-color: #3d4347;
+}
+.expView_Video ul li .expView_ShortThumb img, .expView_Users ul li .expView_ShortThumb img, .expView_Shorts ul li .expView_ShortThumb img {
+  width: 100%;
+  height: 100%;
+}
+.expView_Video ul li .expView_VidInfo, .expView_Users ul li .expView_VidInfo, .expView_Shorts ul li .expView_VidInfo {
+  margin: 10px 0px 0px;
+}
+.expView_Video ul li .expView_VidInfo img, .expView_Users ul li .expView_VidInfo img, .expView_Shorts ul li .expView_VidInfo img {
+  float: left;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0px 10px 0px 0px;
+}
+.expView_Video ul li .expView_VidInfo .expView_VidTitle, .expView_Users ul li .expView_VidInfo .expView_VidTitle, .expView_Shorts ul li .expView_VidInfo .expView_VidTitle {
+  font-weight: bold;
+  font-size: 14px;
+}
+.expView_Video ul li .expView_VidInfo .expView_VidDate, .expView_Users ul li .expView_VidInfo .expView_VidDate, .expView_Shorts ul li .expView_VidInfo .expView_VidDate {
+  font-size: 13px;
+}
+.expView_Video ul li .expView_UsrInfo, .expView_Users ul li .expView_UsrInfo, .expView_Shorts ul li .expView_UsrInfo {
+  margin: 10px 0px 0px;
+}
+.expView_Video ul li .expView_ShortInfo, .expView_Users ul li .expView_ShortInfo, .expView_Shorts ul li .expView_ShortInfo {
+  margin: 10px 0px 0px 0px;
+}

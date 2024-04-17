@@ -1,0 +1,27 @@
+.ai_ViewTxt_Wpr {
+    display: flex; /* Activate Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    h1 {
+        display:block;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    p {
+        margin: 10px auto;
+    }
+    ol {
+        list-style: auto;
+        li {
+            display: block;
+            margin: 10px auto;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: #252525;
+            cursor: pointer;
+            &:hover {
+                background-color: #a1a1a11a;
+            }
+        }
+    }
+}
