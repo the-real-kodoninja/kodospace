@@ -1,0 +1,158 @@
+.usrPge_SetView {
+    .usrPge_SetViewInr {
+        ul {
+			width: 100%;
+			margin: 0px 0px 20px 0px;
+            li {
+                margin: 0px 20px 10px 0px;
+				display: inline-block;		
+                list-style: none;
+                cursor: pointer;
+				padding: 10px;
+				border-radius: 6px;
+                &:hover, .active1 {
+                    background-color: #804949;
+                }
+                    
+                &:active {
+                    color: #333;
+                    border-bottom: 3px solid #804949;
+                }
+                    
+                &:hover.active {
+                    background-color: #804949;
+                }
+                    
+                &:first-child {
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+                    
+                &:last-child {
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+        }
+    }
+    .usrPge_SetView_Main {
+        border-radius: 8px 8px 0px 0px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #252525;
+		display: block;
+        .usrPge_SetView_MainInr {
+			padding: 10px;
+            h2, h4 {
+                padding: 10px;
+            }
+            h2 {
+                padding: 10px;
+                border-radius: 6px 6px 0px 0px;
+                margin: 0px 0px 10px 0px;
+            }
+            h4 {
+                color: rgb(201 116 116);
+                border-bottom: 1px #222222;
+            }
+            label {
+                margin: 0px 0px 10px;
+            }
+            input, textarea {
+                padding: 10px;
+                border-radius: 6px;
+                border: 1px solid #303030;
+                width: 100%;
+                display: block;
+                background-color: transparent;
+                margin: 10px 0px;
+            }
+            p {
+                margin: 0px 0px 10px 0px;
+            }
+            .usrInp_view_1 {
+                div {
+                    display: inline-block;
+                    margin: 0px 20px 0px 0px;
+                }
+                input {
+                    width: auto;
+                    display: inline-block;
+                    margin: 0px 5px 0px 0px;
+                }
+            }
+            input[type="submit"] {
+                width: 100%;
+                margin: 10px 0px 0px 0px;
+                background-color: #804949;
+                border-radius: 6px;
+                cursor: pointer;
+                &:hover {
+                    background-color: darken(#804949, 5%);
+                }
+            }
+            // toggle logic
+            .usrTgl_set {
+                margin: 0px 0px 10px 0px;
+                div {
+                    cursor: pointer;
+                    width: 60px;
+                    height: 30px;
+                    border-radius: 15px;
+                    position: relative;
+                    border: 2px solid;
+                    float: left;
+                    div {
+                        top: 1px;
+                        height: 26px;
+                        width: 26px;
+                        border-radius: 50%;
+                        position: absolute;
+                        transition: left 0.2s;
+                    }
+                }
+                label {
+                    display: inline-block;
+                    margin: 2px 0px 10px 10px;
+                }
+            }
+            // user view / blocked
+            .usrSet_ViewBlck {
+                margin: 0px 0px 20px 0px;
+                img, button {
+                    border-radius: 6px;
+                }
+                img {
+                    border: 1px solid #fff;
+                    float: left;
+                    height: 50px;
+                    width: 50px;
+                }
+                button{
+                    padding: 3px 9px;
+                    background-color: darkslategray;
+                    &:hover {
+                        background-color: darken(darkslategray, 5%);
+                    }
+                }
+            }
+            // reported content
+            .usrSet_ViewRprt {
+                ol {
+                    list-style: auto;
+                    margin: 0px 0px 0px 80px;
+                    .usrSet_ViewLi {
+                        width: 80%;
+                        display: inline-block;
+                        margin: 0px 0px 10px;
+                    }
+                }
+            }
+            // currenccy
+            .usrSet_ViewCrncy {
+                margin: 0px 0px 15px 0px;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,28 @@
+.kWallet_Wpr{
+    width: 648px;
+    .kWallet_Hdr, .kWallet_BdyItm {
+        padding: 20px
+    }
+    .kWallet_Hdr {
+        background-color: #252525;
+        h1 {
+            font-size: 18px;
+        }
+    }
+    .kWallet_Bdy {
+        svg {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+        }
+        .kWallet_BdyItm {
+            span.col1, span.col2, span.col3 {
+                // display: flex;
+                // flex-wrap: wrap;
+            }
+            span.col1 {
+                width: 50%;
+            }
+        }
+    }
+}

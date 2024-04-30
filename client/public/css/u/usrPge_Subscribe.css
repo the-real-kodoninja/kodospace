@@ -13,6 +13,24 @@
 }
 .topSupPnl .topSupPnl_Usr {
   margin: 10px 0px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.topSupPnl .topSupPnl_Usr:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  animation: hover 2s infinite;
 }
 .topSupPnl .topSupPnl_Usr div img {
   height: 30px;

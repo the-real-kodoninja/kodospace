@@ -1,0 +1,140 @@
+.usrPge_SetView .usrPge_SetViewInr ul {
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+}
+.usrPge_SetView .usrPge_SetViewInr ul li {
+  margin: 0px 20px 10px 0px;
+  display: inline-block;
+  list-style: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 6px;
+}
+.usrPge_SetView .usrPge_SetViewInr ul li:hover, .usrPge_SetView .usrPge_SetViewInr ul li .active1 {
+  background-color: #804949;
+}
+.usrPge_SetView .usrPge_SetViewInr ul li:active {
+  color: #333;
+  border-bottom: 3px solid #804949;
+}
+.usrPge_SetView .usrPge_SetViewInr ul li:hover.active {
+  background-color: #804949;
+}
+.usrPge_SetView .usrPge_SetViewInr ul li:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.usrPge_SetView .usrPge_SetViewInr ul li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.usrPge_SetView .usrPge_SetView_Main {
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #252525;
+  display: block;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr {
+  padding: 10px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr h2, .usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr h4 {
+  padding: 10px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr h2 {
+  padding: 10px;
+  border-radius: 6px 6px 0px 0px;
+  margin: 0px 0px 10px 0px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr h4 {
+  color: rgb(201, 116, 116);
+  border-bottom: 1px #222222;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr label {
+  margin: 0px 0px 10px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr input, .usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #303030;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  margin: 10px 0px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr p {
+  margin: 0px 0px 10px 0px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrInp_view_1 div {
+  display: inline-block;
+  margin: 0px 20px 0px 0px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrInp_view_1 input {
+  width: auto;
+  display: inline-block;
+  margin: 0px 5px 0px 0px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr input[type=submit] {
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+  background-color: #804949;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr input[type=submit]:hover {
+  background-color: #704040;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrTgl_set {
+  margin: 0px 0px 10px 0px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrTgl_set div {
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+  border: 2px solid;
+  float: left;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrTgl_set div div {
+  top: 1px;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  position: absolute;
+  transition: left 0.2s;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrTgl_set label {
+  display: inline-block;
+  margin: 2px 0px 10px 10px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrSet_ViewBlck {
+  margin: 0px 0px 20px 0px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrSet_ViewBlck img, .usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrSet_ViewBlck button {
+  border-radius: 6px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrSet_ViewBlck img {
+  border: 1px solid #fff;
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrSet_ViewBlck button {
+  padding: 3px 9px;
+  background-color: darkslategray;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrSet_ViewBlck button:hover {
+  background-color: #253f3f;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrSet_ViewRprt ol {
+  list-style: auto;
+  margin: 0px 0px 0px 80px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrSet_ViewRprt ol .usrSet_ViewLi {
+  width: 80%;
+  display: inline-block;
+  margin: 0px 0px 10px;
+}
+.usrPge_SetView .usrPge_SetView_Main .usrPge_SetView_MainInr .usrSet_ViewCrncy {
+  margin: 0px 0px 15px 0px;
+}

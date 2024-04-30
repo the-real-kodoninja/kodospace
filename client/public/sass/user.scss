@@ -25,6 +25,25 @@ $imgPreset_1: center / cover no-repeat;
             width: 150px;
             float: left;
         }
+        .usrPgeHdr_usrImgEdit {
+            width: 100%;
+            height: 100%;
+            background-color: #13131361;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            max-width: 150px;
+            svg {
+                height: 30px;
+                width: 30px;
+                opacity:0.8;
+                cursor: pointer;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
         .usrPgeHdr_btns {
             margin: 18px 0px 0px 0px;
             z-index: 1;
@@ -58,7 +77,25 @@ $imgPreset_1: center / cover no-repeat;
         border-radius: 15px;
         position: absolute;
         top: 0;
-        
+        .usrPgeBnr_Edit {
+            width: 100%;
+            height: 100%;
+            background-color: #13131361;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            top:0;
+            svg {
+                height: 30px;
+                width: 30px;
+                opacity:0.8;
+                cursor: pointer;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
     }
     .bannerLargeBackdrop {
         position: fixed;

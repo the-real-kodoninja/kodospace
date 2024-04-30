@@ -1,0 +1,95 @@
+.modalBackdrop {
+    .modalCmntView_Wpr {
+        background-color: #131313;
+        padding: 20px;
+        border-radius: 8px;
+        width: 648px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        height: 500px;
+        .modalMediaClx {
+            float: right;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .modalCmntView_Hdr {
+            img.modalCmntImgHdr {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                float: left;
+                margin-right: 15px;
+            }
+        }
+        .modalPostMediaScl {
+            margin: 10px 0px 10px 0px;
+            svg {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+            }
+        }
+        .modalPostMediaBdy {
+            height: 215px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            margin: 25px 0px 0px 0px;
+        }
+        .modalPostMediaFtr {
+            textarea {
+                width: 100%;
+                height: 70px;
+                resize: vertical;
+                padding: 10px;
+                background-color: #252525;
+                border-radius: 4px;
+            }
+            
+        }
+        .modalMediaPostSVG {
+            margin: -7px 0px 8px 0px;
+            background-color: #252525;
+            padding: 0px 0px 7px 7px;
+            border-radius: 0px 0px 7px 7px;
+            svg {
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                margin: 0px 5px 0px 0px;
+                color: rgba(255, 255, 255, 0.5098039216);
+            }
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #804949;
+            color: #fff;
+            padding: 10px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .modalCmntViewReplies {
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                float: left;
+                margin: 0px 5px 0px 0px;
+            }
+            .modalMediaCmnt_Wpr {
+                margin: 0px 0px 15px 40px;
+                width: auto;
+                display: table;
+                .modalMediaCmnt_Inr, .modalMediaCmntReply_Inr {
+                    background-color: #252525;
+                    padding: 10px;
+                    border-radius: 15px;
+                }
+                .modalMediaCmnt_Stat {
+                    font-size: 14px;
+                    margin: 2px 0px 0px 10px;
+                }
+            }
+        }
+    }
+}

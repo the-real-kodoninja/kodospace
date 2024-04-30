@@ -10,23 +10,35 @@ $color_1: #fff;
 @import "mnPst_Wpr.css";
 // post modual
 @import "pst/postPopup.css";
+@import "pst/commentsPopup.css";
 @import "notiView.css";
 @import "footer.css";
 @import "user.css";
 @import "messages.css";
 @import "explore.css";
+@import "watch.css";
 @import "ai.css";
+@import "wallet.css";
+@import "monetization.css";
+@import "hashtags.css";
+@import "history.css";
+@import "space.css";
+@import "list.css";
 // user modules
 @import "u/usrPge_Live.css";
 @import "u/usrPge_Play.css";
 @import "u/usrPge_Story.css";
-@import "u/usrPge_Fllw.scss";
+@import "u/usrPge_Fllw.css";
 @import "u/usrPge_Subscribe.css";
 @import "u/usrPge_About.css";
 @import "u/donatePopup.css";
 @import "u/postModal.css";
 @import "m/pstGlb_mod.css";
 @import "set/usrPge_Settings.css";
+@import "media/videoPlayer.css";
+@import "media/chatMsg.css";
+@import "asdMod.css";
+@import "tooltip.css";
 
 html,body {
 	max-height: 100vh;  /* Limit height to 80% of viewport height */
@@ -42,6 +54,19 @@ main {
 	justify-content: center;
 	display: ruby;
 	align-items: center;
+}
+
+.glbl-PULL {
+	width: 648px;
+  height:auto;
+  border-radius: 6px;
+  margin: 0px auto;
+  position: absolute;
+  top: 35%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 50%; /* or any specific width */
+  height: 50%; /* or any specific height */
 }
 
 .mnVwbdy {
@@ -66,4 +91,29 @@ nav.Lft_menu {
 			}
 		}
 	}
+}
+
+input[type=search] {
+	color: grey;
+	 display: inline-block;
+	 /* adding gradients */
+	 -webkit-mask: linear-gradient(120deg, #000 25%, #0005, #000 75%) right/250% 100%;
+	 /* shimmer effect animation */
+	 animation: shimmer 2.5s infinite;
+	 background-repeat: no-repeat;
+  }
+  @keyframes shimmer {
+	 100% {
+		/* setting up mask position at left side */
+		-webkit-mask-position: left
+	 }
+  }
+
+ .viewMoreBtn {
+	padding: 10px;
+	border-radius: 6px;
+	text-align: center;
+	background-color: #252525;
+	width: 100%;
+	margin: 0px 0px 10px 0px;
 }

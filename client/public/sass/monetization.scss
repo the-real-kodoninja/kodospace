@@ -1,0 +1,50 @@
+.monIntro_Wpr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 80vw;   
+    border-radius: 15px;
+    .monIntro_Inr {
+        border: 1px solid #333;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.05);
+        div {
+            width: 400px;
+            padding: 20px;
+            border-bottom: 1px solid #333;
+            cursor: pointer;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.05);
+            }
+        }
+    }
+  }
+  
+.monIntro_Full {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    height: 100vh; 
+    width: 80vw;   
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    border: 1px solid #333;
+    border-radius: 15px;
+    background-color: #252525;
+    .monIntro_Full_Hdr {
+        padding: 20px;
+        width: 100%;
+        h1 {
+            text-align: center;
+            display: inline-block;
+        }
+        svg {
+            float:right;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    
+}

@@ -1,5 +1,13 @@
 $background-color_2: #252525;
 
+.Playlist_ViewAll {
+	h1 {
+		font-weight: 600;
+		size: 18px;
+		margin: 0px 0px 10px 0px;
+	}
+}
+
 .usrPlay_View {
     width: 100%;
     background-color: $background-color_2;
@@ -12,16 +20,38 @@ $background-color_2: #252525;
         li {
             padding: 10px;
             margin: 0px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            @keyframes hover {
+                0% {
+                transform: translateY(0);
+                }
+                50% {
+                transform: translateY(-2px);
+                }
+                100% {
+                transform: translateY(0);
+                }
+            }
+            &:hover {
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                transform: translateY(-4px);
+                animation: hover 2s infinite;
+            }
             .usrPlay_VidVw {
                 .usrPlay_VidThmb {
                     display: inline-block;
                     height: auto;
                     width: 152px;
                     position: absolute;
-                    border: 1px solid #fff;
+                    border: 1px solid #252525;
                     img {
                         height: auto;
-                        width: 150px;  
+                        width: 150px;
+                        cursor: pointer;
+                        &:hover {
+                            position: relative;
+                        }  
                     }
                 }
             }

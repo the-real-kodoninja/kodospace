@@ -4,6 +4,7 @@ import Lft_menu from '../components/lft_menu.tsx';
 import axios from 'axios';
 // post global modules
 import PstGlb_Mod from '../components/m/pstGlb_mod.tsx';
+import ChatMsg_Mod from '../components/media/chatMsg.tsx';
 // explore moduals
 import ExpView_Video from '../components/exp/expView_Video.tsx';
 import ExpView_Short from '../components/exp/expView_Short.tsx';
@@ -61,6 +62,7 @@ export default function ExploreApp () {
                     <ExpView_User />
                 </div>
             </main>
+			<ChatMsg_Mod/>
             <PstGlb_Mod/>
         </Fragment>
     );

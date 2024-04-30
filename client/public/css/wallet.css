@@ -1,0 +1,20 @@
+.kWallet_Wpr {
+  width: 648px;
+}
+.kWallet_Wpr .kWallet_Hdr, .kWallet_Wpr .kWallet_BdyItm {
+  padding: 20px;
+}
+.kWallet_Wpr .kWallet_Hdr {
+  background-color: #252525;
+}
+.kWallet_Wpr .kWallet_Hdr h1 {
+  font-size: 18px;
+}
+.kWallet_Wpr .kWallet_Bdy svg {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.kWallet_Wpr .kWallet_Bdy .kWallet_BdyItm span.col1 {
+  width: 50%;
+}
