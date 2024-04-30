@@ -4,6 +4,24 @@
   margin: 0px 20px 20px 0px;
   display: inline-grid;
   border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.mnPst_Wpr:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  animation: hover 2s infinite;
 }
 .mnPst_Wpr .mnPst_Hdr, .mnPst_Wpr .mnPst_Bdy, .mnPst_Wpr .mnPst_Ftr {
   padding: 10px;
@@ -24,6 +42,20 @@
 .mnPst_Wpr ul.mnPst_Mnu li:hover {
   background-color: #434343;
   color: #fff;
+}
+.mnPst_Wpr .mnPst_Ftr svg.likeBtnModule {
+  cursor: pointer; /* Indicate clickable behavior */
+  transition: all 0.3s ease-in-out; /* Smooth transition for animation */
+}
+.mnPst_Wpr .mnPst_Ftr svg.likeBtnModule:active {
+  transform: scale(0.95); /* Slight scale down on click */
+}
+.mnPst_Wpr .mnPst_Ftr svg.likeBtnModule:hover {
+  fill: rgb(179, 109, 109); /* Red color on hover (optional) */
+}
+
+.clicked {
+  fill: rgb(179, 109, 109); /* Red color on hover (optional) */
 }
 
 .svg-style, .mnPst_Wpr .mnPst_Hdr svg, .mnPst_Wpr .mnPst_Bdy svg, .mnPst_Wpr .mnPst_Ftr svg {
@@ -58,4 +90,42 @@
 }
 .modalMediaVmre:hover {
   background-color: #7a4040;
+}
+
+.newPst_Mod {
+  border-radius: 25px;
+  background-color: rgb(217, 99, 99);
+  color: #fff;
+  padding: 5px;
+  position: fixed;
+  display: inline-flex;
+  right: 79vh;
+  z-index: 2;
+}
+.newPst_Mod div {
+  display: inline-flex;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.newPst_Mod div:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition-delay: 0.2s;
+  padding: 2px 4px;
+}
+.newPst_Mod div img {
+  width: 25px;
+  height: 25px;
+  margin: 0px -12px 0px 0px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.newPst_Mod div img:hover {
+  opacity: 1;
+  position: relative;
+  transition: opacity 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.newPst_Mod div span {
+  margin: 0px 0px 0px 15px;
 }

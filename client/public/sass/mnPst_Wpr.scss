@@ -8,7 +8,24 @@ $imgPreset_1: center / cover no-repeat;
   margin: 0px 20px 20px 0px;
   display: inline-grid;
   border-radius: 6px;
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  @keyframes hover {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+    animation: hover 2s infinite;
+  }
   .mnPst_Hdr, .mnPst_Bdy, .mnPst_Ftr {
     padding: 10px;
 
@@ -33,6 +50,22 @@ $imgPreset_1: center / cover no-repeat;
       }
     }
   }
+  .mnPst_Ftr {
+    svg.likeBtnModule {
+      cursor: pointer; /* Indicate clickable behavior */
+      transition: all 0.3s ease-in-out; /* Smooth transition for animation */
+      &:active {
+        transform: scale(0.95); /* Slight scale down on click */
+      }
+      &:hover {
+        fill: rgb(179, 109, 109); /* Red color on hover (optional) */
+      }
+    }
+  }
+}
+
+.clicked {
+  fill: rgb(179, 109, 109); /* Red color on hover (optional) */
 }
 
 .svg-style {
@@ -69,3 +102,43 @@ $imgPreset_1: center / cover no-repeat;
     background-color: darken(rgb(179, 109, 109), 20%);
   }
 }
+
+.newPst_Mod {
+  border-radius: 25px;
+  background-color: rgb(217 99 99);
+  color: #fff;
+  padding: 5px;
+  position: fixed;
+  display: inline-flex;
+  right: 79vh;
+  z-index:2;
+  div {
+    display: inline-flex;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		transform: scale(1.1);
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+		transition-delay: 0.2s;
+		padding: 2px 4px;
+	}
+    img {
+      width: 25px;
+      height: 25px;
+      margin: 0px -12px 0px 0px;
+      border-radius: 50%;
+      display: inline-block;
+	  &:hover {
+		opacity: 1;
+		position: relative;
+		transition: opacity 0.3s ease-in-out;
+		background-color: rgba(0, 0, 0, 0.5);
+	  }
+    }
+    span {
+      margin: 0px 0px 0px 15px;
+    }
+  }
+}
+
+

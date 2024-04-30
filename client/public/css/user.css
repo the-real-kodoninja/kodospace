@@ -23,6 +23,25 @@
   width: 150px;
   float: left;
 }
+.usrPgeHdr .usrPgeHdr_Info .usrPgeHdr_usrImgEdit {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.3803921569);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 150px;
+}
+.usrPgeHdr .usrPgeHdr_Info .usrPgeHdr_usrImgEdit svg {
+  height: 30px;
+  width: 30px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.usrPgeHdr .usrPgeHdr_Info .usrPgeHdr_usrImgEdit svg:hover {
+  opacity: 1;
+}
 .usrPgeHdr .usrPgeHdr_Info .usrPgeHdr_btns {
   margin: 18px 0px 0px 0px;
   z-index: 1;
@@ -55,6 +74,25 @@
   border-radius: 15px;
   position: absolute;
   top: 0;
+}
+.usrPgeHdr .usrPgeBnr .usrPgeBnr_Edit {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.3803921569);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  top: 0;
+}
+.usrPgeHdr .usrPgeBnr .usrPgeBnr_Edit svg {
+  height: 30px;
+  width: 30px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.usrPgeHdr .usrPgeBnr .usrPgeBnr_Edit svg:hover {
+  opacity: 1;
 }
 .usrPgeHdr .bannerLargeBackdrop {
   position: fixed;

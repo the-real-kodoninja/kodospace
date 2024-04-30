@@ -197,7 +197,8 @@ const App = () => {
         <MHeader/>
         <main>
             <Lft_menu/>
-            <div className="cntr_wrp dI pA p10">
+            <div className="cntr_wrp p10">
+				<div className="glbl-PULL">
               <div className="message-viewer" style={{ display: 'flex', flexDirection: 'row' }}>
                 <MessageList messages={messages} onClick={handleMessageClick} style={{ width: `${messageListWidth}px` }} />
                 <div
@@ -208,6 +209,7 @@ const App = () => {
                 <MessageContent selectedMessage={selectedMessage} style={{ flex: 1 }} />
               </div>
             </div>
+			</div>
         </main>
     </Fragment>
   );

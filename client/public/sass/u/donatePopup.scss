@@ -1,53 +1,86 @@
-$background-color_2: #252525;
+$background_color_1: #252525;
+$background_color_2: #131313;
+$background_color_3: #804949;
 
-.donatePopup {
-    border-radius: 6px;
-    min-height: 380px;
-    height: auto;
-    width: 400px;
-    position: fixed;
-    background-color: rgb(43 39 39 / 90%); 
-    display: flex;
-    z-index: 999; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    .donateForm {
-        padding: 10px;
-        .radio-group {
-            display: flex;
-            margin-bottom: 10px;
-          
-            .radio-option {
-              margin-right: 10px;
-              padding: 10px;
-              border: 1px solid #d1d1d1;
-              cursor: pointer;
-          
-              &.selected {
-                background-color: rgb(128, 73, 73);
-                background-color: rgb(128, 73, 73);
-              }
-            }
-          }
+.donateForm {
+    background-color: $background_color_2;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    @keyframes hover {
+        0% {
+        transform: translateY(0);
+        }
+        50% {
+        transform: translateY(-2px);
+        }
+        100% {
+        transform: translateY(0);
+        }
     }
-    .amount-option {
-        margin-right: 10px;
-        padding: 10px;
-        border: 1px solid #d1d1d1;
-        cursor: pointer;
+    &:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-4px);
+        animation: hover 2s infinite;
+    }
+    .donateModalHdr {
+        margin: 0px 0px 10px 0px;
+        span {
+            svg {
+                width: 20px;
+                height: 20px;
+                margin: 0px 10px 0px 0px;
+                display: inline-block;
+              }
+        }
+    }
+    .radio-group, .amount-option {
+        display: grid;
+        place-items: center;
+    }
+    .radio-group {
+        display: flex;
+        margin-bottom: 10px;
+        
+        .radio-option {
+            margin: 0px;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+            text-align: center;
+            &.selected {
+            background-color: rgb(128, 73, 73);
+            }
+        }
+    }
+    .amount-options {
+        display: flex;
+        margin: 0px 0px 10px 0px;
+        .amount-option {
+            margin: 0;
+            padding: 10px;
+            cursor: pointer;
+            flex: 1;
+            border-radius: 4px;
+        }
+        
+        .amount-option.selected {
+            background-color: rgb(128, 73, 73);
+        }
     }
     
-    .amount-option.selected {
-        border: 1px solid rgb(128, 73, 73);
-    }
     input[type="text"], textarea {
         width: 100%;
+        height: auto;
+        resize: vertical;
         padding: 10px;
-        border: 1px solid #d1d1d1;
-        color: #000;
-        border-radius: 6px;
-        margin: 0px 0px 10px 0px;
+        margin-bottom: 10px;
+        background-color: $background_color_1;
+        border-radius: 4px;
     }
     .donateSbmtBtn button {
         display: block;
@@ -55,6 +88,24 @@ $background-color_2: #252525;
         padding: 10px;
         border-radius: 6px;
         width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        @keyframes hover {
+            0% {
+            transform: translateY(0);
+            }
+            50% {
+            transform: translateY(-2px);
+            }
+            100% {
+            transform: translateY(0);
+            }
+        }
+        &:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-4px);
+            animation: hover 2s infinite;
+        }
         &:nth-child(1) {
             background-color: rgb(128, 73, 73);
         }

@@ -1,94 +1,120 @@
-import React, { Fragment, useState, useEffect } from 'react';
-import timeAgo from "../../addons/timeAgo.tsx";
+import React, { Fragment, useState, useEffect } from  'react';
+// temp user call modules
+import MnPst_View from '../../components/mnPst_View.tsx';
+import UsrPge_Live from './usrPge_Live.tsx'; // live
+import UsrPge_Play from './usrPge_Play.tsx'; // play
+import UsrPge_Story from './usrPge_Story.tsx'; // play
+import UsrPge_Subscribe from './usrPge_Subscribe.tsx'; // subscribe
+import { UsrPge_Followers,UsrPge_Following } from './usrPge_Fllw.tsx'; // followers/following
+import UsrPge_About from './usrPge_About.tsx'; // about
 
-function getRandomDate() {
-    const startYear = 2023; // Adjust as needed (e.g., 2020 for dates since 2020)
-    const endYear = new Date().getFullYear(); // Get current year
+export default function usrPge_fltr({ items, onFilterClick, selectedFilter: initialFilter }) {
   
-    const randomYear = Math.floor(Math.random() * (endYear - startYear + 1)) + startYear;
-  
-    // Generate random month (0-11) and pad with leading zero if needed
-    const randomMonth = Math.floor(Math.random() * 12).toString().padStart(2, '0');
-  
-    // Generate random day within the month (1-31) with padding
-    const randomDay = Math.floor(Math.random() * 31) + 1;
-    const paddedDay = randomDay.toString().padStart(2, '0');
-  
-    // Generate random hours (0-23) with padding
-    const randomHours = Math.floor(Math.random() * 24).toString().padStart(2, '0');
-  
-    // Generate random minutes (0-59) with padding
-    const randomMinutes = Math.floor(Math.random() * 60).toString().padStart(2, '0');
-  
-    // Create the date string in the desired format
-    const randomDate = `${randomYear}-${randomMonth}-${paddedDay}T${randomHours}:${randomMinutes}:00`;
-  
-    return new Date(randomDate);
-  }
+  const filterItems = [
+    'post',
+    'likes',
+    'live',
+    'playlist',
+    'stories',
+    'followers',
+    'following',
+    'subscribe',
+    'about',
+  ];
 
-// Reusable component for both followers and following views
-const UsrFllwView = ({ user }) => {
+  const [selectedFilter, setSelectedFilter] = useState('post');
 
-    const { id, usrNme, usrImg, liveStat, fllwBtn } = user;
-
-    return (
-      <div key={id} className="usrFllw_Wpr">
-        <img src={"img/"+usrImg} alt={usrNme} className="usrFllw_Img"/>
-        <div className="usrFllw_Rgt">
-            <div>{usrNme}</div> 
-            <div>{timeAgo(new Date(liveStat))}</div> 
-            <button className="usrFllw_Btn">{fllwBtn}</button>      
-        </div>
-    </div>
-    );
+const handleFilterChange = (filter) => {
+  setSelectedFilter(filter);
 };
 
-export function UsrPge_Followers() {
-    // backend call logic for followers goes here to load below
-    const usersData = [
-        { id: 1, usrNme: 'kodoninja', usrImg: 'no_imgLnk2.svg', liveStat: 2, fllwBtn: 'following' }
-      ];
-      
-      // Filling the rest using a loop (assuming user names and image links follow a pattern)
-      for (let i = 1; i <= 20; i++) {
-        usersData.push({
-          id: i,
-          usrNme: `user${i}`,
-          usrImg: `no_imgLnk2.svg`,
-          liveStat: getRandomDate().toString(), // Convert to string before pushing
-          fllwBtn: Math.random() > 0.5 ? 'following' : 'follow', // Random follow button state
-        });
-      }
-      return (
-        <div>
-          {usersData.map((user) => (
-            <UsrFllwView key={user.id} user={user} />
-          ))}
-        </div>
-      );
-}
+
+  useEffect(() => {
+    // Fetch initial data based on initialFilter or default filter
+    handleClick(selectedFilter);
+  }, [selectedFilter]); // Depend on selectedFilter to re-run when it changes
+  const [content, setContent] = useState(null);
+  const [isLoading, setIsLoading] = useState(false); // Track loading state
+
+
+  const handleClick = (filter) => {
+    setSelectedFilter(filter);
+    setIsLoading(true); // Set loading state to true
   
-export function UsrPge_Following() {
-    // backend call logic for following goes here to load below
-    const usersData = [
-        { id: 1, usrNme: 'kodoninja', usrImg: 'no_imgLnk2.svg', liveStat: 2, fllwBtn: 'following' }
-      ];
-      
-      // Filling the rest using a loop (assuming user names and image links follow a pattern)
-      for (let i = 1; i <= 20; i++) {
-        usersData.push({
-          id: i,
-          usrNme: `user${i}`,
-          usrImg: `no_imgLnk2.svg`,
-          liveStat: getRandomDate().toString(), // Convert to string before pushing
-          fllwBtn: Math.random() > 0.5 ? 'following' : 'follow', // Random follow button state
-        });
-      }
-      return (
-        <div>
-          {usersData.map((user) => (
-            <UsrFllwView key={user.id} user={user} />
+    if (onFilterClick) {
+      onFilterClick(filter); // Optional call to provided function
+    }
+  
+    // Set the appropriate user module component based on filter
+    let ComponentToRender;
+    switch (filter) {
+      case 'post':
+        ComponentToRender = MnPst_View;
+        break;
+      case 'live':
+        ComponentToRender = UsrPge_Live;
+        break;
+      case 'playlist':
+        ComponentToRender = UsrPge_Play;
+        break;
+      case 'stories':
+        ComponentToRender = UsrPge_Story;
+        break;
+      case 'followers':
+        ComponentToRender = UsrPge_Followers;
+        break;
+      case 'following':
+        ComponentToRender = UsrPge_Following;
+        break;
+      case 'subscribe':
+        ComponentToRender = UsrPge_Subscribe;
+        break;
+      case 'about':
+        ComponentToRender = UsrPge_About;
+        break;
+      default:
+        ComponentToRender = null; // Handle default case
+    }
+  
+    setContent(() => ComponentToRender);
+    setIsLoading(false);
+  };
+
+  useEffect(() => {
+    // Optional: Fetch initial data based on default filter
+    handleClick(selectedFilter);
+  }, []); // Empty dependency array to run only once on component mount
+
+  return (
+    <>
+      <div style={{ margin: '0px 0px 20px 0px' }}>
+        <ul className="hdr-fltr" style={{ margin: '8px 0px 0px' }}>
+          {Object.entries(filterItems).map(([key, value]) => (
+            <li
+              key={key}
+              style={{
+                backgroundColor: selectedFilter === value ? '#804949' : '',
+                color: selectedFilter === value ? '#fff' : '',
+              }}
+              onClick={() => handleClick(value)}
+            >
+              {value}
+            </li>
           ))}
-        </div>
-      );
+        </ul>
+      </div>
+      {/* Div to display content */}
+      {isLoading ? (
+        <div className="cntr_wrp dI p10">Loading content...</div>
+				) : content ? (
+				<div className="cntr_wrp dI p10" style={{ width: '100%' }}>
+					{/* Render the fetched content here */}
+          {content ? React.createElement(content) : "No content available for this filter."}
+          
+				</div>
+				) : (
+        <div className="cntr_wrp dI p10">No content available for this filter.</div>
+			)}
+    </>
+  );
 }

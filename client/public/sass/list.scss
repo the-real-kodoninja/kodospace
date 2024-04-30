@@ -1,0 +1,43 @@
+.list_View_All {
+	h2 {
+		size: 18px;
+		font-weight: 600;
+		margin: 0px 0px 10px 0px;
+	}
+	.list_View_Itm {
+		width: 100%;
+		margin: 0px 0px 10px 0px;
+		.list_View_ImgOvly {
+			img, .imgOvlry_1 {
+				height: 50px;
+				width: 50px;
+				float: left;
+			}
+			img {
+				margin: 0px 10px 0px 0px;
+			}
+			.imgOvlry_1 {
+				position: absolute;
+				margin:  0px 0px 0px -60px;
+			}
+		}
+		.listItem_Hdr {
+			margin: 0px 0px 5px 0px;
+			b {
+				margin: 0px 10px 0px 0px;
+			}
+		}
+		.listItem_Ftr {
+			div {
+				display: inline-block;
+				margin: 0px 10px 0px 0px;
+				img {
+					border-radius: 50%;
+					height: 20px;
+					width: 20px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+.list_View_All h2 {
+  size: 18px;
+  font-weight: 600;
+  margin: 0px 0px 10px 0px;
+}
+.list_View_All .list_View_Itm {
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+}
+.list_View_All .list_View_Itm .list_View_ImgOvly img, .list_View_All .list_View_Itm .list_View_ImgOvly .imgOvlry_1 {
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+.list_View_All .list_View_Itm .list_View_ImgOvly img {
+  margin: 0px 10px 0px 0px;
+}
+.list_View_All .list_View_Itm .list_View_ImgOvly .imgOvlry_1 {
+  position: absolute;
+  margin: 0px 0px 0px -60px;
+}
+.list_View_All .list_View_Itm .listItem_Hdr {
+  margin: 0px 0px 5px 0px;
+}
+.list_View_All .list_View_Itm .listItem_Hdr b {
+  margin: 0px 10px 0px 0px;
+}
+.list_View_All .list_View_Itm .listItem_Ftr div {
+  display: inline-block;
+  margin: 0px 10px 0px 0px;
+}
+.list_View_All .list_View_Itm .listItem_Ftr div img {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}

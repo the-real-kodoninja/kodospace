@@ -1,60 +1,107 @@
-.donatePopup {
-  border-radius: 6px;
-  min-height: 380px;
-  height: auto;
-  width: 400px;
-  position: fixed;
-  background-color: rgba(43, 39, 39, 0.9);
-  display: flex;
-  z-index: 999;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.donateForm {
+  background-color: #131313;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
-.donatePopup .donateForm {
-  padding: 10px;
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-.donatePopup .donateForm .radio-group {
+.donateForm:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  animation: hover 2s infinite;
+}
+.donateForm .donateModalHdr {
+  margin: 0px 0px 10px 0px;
+}
+.donateForm .donateModalHdr span svg {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px 0px 0px;
+  display: inline-block;
+}
+.donateForm .radio-group, .donateForm .amount-option {
+  display: grid;
+  place-items: center;
+}
+.donateForm .radio-group {
   display: flex;
   margin-bottom: 10px;
 }
-.donatePopup .donateForm .radio-group .radio-option {
-  margin-right: 10px;
+.donateForm .radio-group .radio-option {
+  margin: 0px;
   padding: 10px;
-  border: 1px solid #d1d1d1;
   cursor: pointer;
-}
-.donatePopup .donateForm .radio-group .radio-option.selected {
-  background-color: rgb(128, 73, 73);
-  background-color: rgb(128, 73, 73);
-}
-.donatePopup .amount-option {
-  margin-right: 10px;
-  padding: 10px;
-  border: 1px solid #d1d1d1;
-  cursor: pointer;
-}
-.donatePopup .amount-option.selected {
-  border: 1px solid rgb(128, 73, 73);
-}
-.donatePopup input[type=text], .donatePopup textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #d1d1d1;
-  color: #000;
-  border-radius: 6px;
+  border-radius: 4px;
+  text-align: center;
+}
+.donateForm .radio-group .radio-option.selected {
+  background-color: rgb(128, 73, 73);
+}
+.donateForm .amount-options {
+  display: flex;
   margin: 0px 0px 10px 0px;
 }
-.donatePopup .donateSbmtBtn button {
+.donateForm .amount-options .amount-option {
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+  flex: 1;
+  border-radius: 4px;
+}
+.donateForm .amount-options .amount-option.selected {
+  background-color: rgb(128, 73, 73);
+}
+.donateForm input[type=text], .donateForm textarea {
+  width: 100%;
+  height: auto;
+  resize: vertical;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #252525;
+  border-radius: 4px;
+}
+.donateForm .donateSbmtBtn button {
   display: block;
   margin: 0px 0px 10px 0px;
   padding: 10px;
   border-radius: 6px;
   width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
-.donatePopup .donateSbmtBtn button:nth-child(1) {
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.donateForm .donateSbmtBtn button:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  animation: hover 2s infinite;
+}
+.donateForm .donateSbmtBtn button:nth-child(1) {
   background-color: rgb(128, 73, 73);
 }
-.donatePopup .donateSbmtBtn button:nth-child(2) {
+.donateForm .donateSbmtBtn button:nth-child(2) {
   background-color: darkslategray;
 }

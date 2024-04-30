@@ -36,6 +36,13 @@ nav.Lft_menu ul li svg {
   margin: 0px 10px 0px 0px;
 }
 
+.hTag_vPge {
+  background-color: #804949;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
 .L_usrHdr {
   height: 50px;
 }
@@ -47,4 +54,13 @@ nav.Lft_menu ul li svg {
   background-repeat: none;
   border: 2px solid #565659;
   float: left;
+}
+
+.asdSch {
+  background-color: #252525;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 35px;
+  text-indent: 10px;
 }

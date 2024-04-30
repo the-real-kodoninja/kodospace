@@ -1,0 +1,57 @@
+.hashTag_View-Wpr {
+  width: 658px;
+}
+.hashTag_View-Wpr .hashTag_View {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.hashTag_View-Wpr .hashTag_View li {
+  padding: 10px 20px;
+  background-color: #903d3d;
+  border-radius: 4px;
+  margin: 0px 0px 10px 0px;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  /* Animate on hover state */
+}
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes darken-on-hover {
+  from {
+    background-color: #883030; /* Start color (same as initial) */
+  }
+  to {
+    background-color: #773030; /* Target color (darker shade) */
+  }
+}
+.hashTag_View-Wpr .hashTag_View li:hover {
+  animation: darken-on-hover 0.5s ease-in-out;
+  background-color: #773030;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  animation: hover 2s infinite;
+}
+.hashTag_View-Wpr .hashTag_View li a {
+  color: #fff;
+}
+.hashTag_View-Wpr .hashTag_View li a:hover {
+  text-decoration: none;
+}
+.hashTag_View-Wpr .hashTag_View li span svg {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin: -5px 0px 0px;
+}

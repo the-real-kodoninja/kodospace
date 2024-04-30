@@ -1,6 +1,29 @@
-- site upload to github
-- vscode link up to github
 - neovim updates
 
-- post button at the bottom righthand of the screen
-- message button at the righthand side of the screen
+- npm install
+- - ffmpeg
+- - react-gif
+- - react-emoji
+- - react-draggable
+
+
+- search panel
+- search page 
+- notifications panel
+- history page
+- playlist page
+- user playlist fuctionality
+- light mode
+- premium (3D)
+- monetization (3D)
+- AI (3D)
+- Info pages
+- - help.kodospace.com
+- - business.kodospace.com
+- - about.kodospace.com
+
+- your kodospace
+- - a digital space made for you buy you.
+- - - add hashtags to your kodospace
+- - - add topics, phrases, user channels...
+- - - kodospace/myspace: search modify whats in your kodospace 

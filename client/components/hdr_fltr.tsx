@@ -1,4 +1,5 @@
 import React, { Fragment,useState } from 'react';
+import Link from 'next/link';
 
 export default function Hdr_fltr ({ items, onFilterClick })  {
 
@@ -30,6 +31,7 @@ export default function Hdr_fltr ({ items, onFilterClick })  {
                 {value}
             </li>
             ))}
+            <Link href="/hashtags"><li className="hTag_vPge" style={{ backgroundColor: '#804949', color: '#fff' }}>view more</li></Link>
         </ul>
         </>
     );

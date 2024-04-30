@@ -1,0 +1,99 @@
+.myspace_Wpr h1 {
+  size: 20px;
+  font-weight: 600;
+}
+.myspace_Wpr p {
+  margin: 10px 0px;
+}
+.myspace_Wpr .space_bv1, .myspace_Wpr .space_bv2, .myspace_Wpr .space_bv3, .myspace_Wpr .space_bv4 {
+  margin: 0px 10px 10px 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  /* Animate on hover state */
+}
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes darken-on-hover {
+  from {
+    background-color: hsl(200, 80%, 50%); /* Start color (same as initial) */
+  }
+  to {
+    background-color: hsl(200, 80%, 30%); /* Target color (darker shade) */
+  }
+}
+.myspace_Wpr .space_bv1:hover, .myspace_Wpr .space_bv2:hover, .myspace_Wpr .space_bv3:hover, .myspace_Wpr .space_bv4:hover {
+  animation: darken-on-hover 0.5s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  animation: hover 2s infinite;
+}
+.myspace_Wpr .space_bv1, .myspace_Wpr .space_bv2, .myspace_Wpr .space_bv3, .myspace_Wpr .space_bv4 {
+  padding: 10px;
+  border-radius: 6px;
+}
+.myspace_Wpr .space_bv1 {
+  background-color: rgb(114, 72, 116);
+}
+.myspace_Wpr .space_bv1:hover {
+  background-color: rgb(95, 59, 97);
+}
+.myspace_Wpr .space_bv2 {
+  background-color: #804949;
+}
+.myspace_Wpr .space_bv2:hover {
+  background-color: #773030;
+}
+.myspace_Wpr .space_bv3 {
+  background-color: rgb(63, 122, 62);
+}
+.myspace_Wpr .space_bv3:hover {
+  background-color: rgb(48, 96, 48);
+}
+.myspace_Wpr .space_bv4 {
+  background-color: #3a3a3a;
+}
+.myspace_Wpr .space_bv4:hover {
+  background-color: #282828;
+}
+.myspace_Wpr div.myspace_SchWpr {
+  margin: 20px 0px 20px 0px;
+}
+.myspace_Wpr div.myspace_SchWpr input[type=text] {
+  width: 100%;
+  background: transparent;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+}
+.myspace_Wpr div.myspace_SchWpr button {
+  float: right;
+}
+.myspace_Wpr div.myspace_SchWpr button svg {
+  position: absolute;
+  margin: 8px 0px 0px -35px;
+  height: 30px;
+  width: 30px;
+}
+.myspace_Wpr ul li {
+  display: inline-block;
+}
+.myspace_Wpr ul li svg {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0px 0px 0px 5px;
+  cursor: pointer;
+}
+.myspace_Wpr ul li svg:hover {
+  fill: #fff;
+  color: #111;
+}
