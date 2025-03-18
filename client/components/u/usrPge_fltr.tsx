@@ -1,12 +1,11 @@
-import React, { Fragment, useState, useEffect } from  'react';
-// temp user call modules
+import React, { useState, useEffect } from 'react';
 import MnPst_View from '../../components/mnPst_View.tsx';
-import UsrPge_Live from './usrPge_Live.tsx'; // live
-import UsrPge_Play from './usrPge_Play.tsx'; // play
-import UsrPge_Story from './usrPge_Story.tsx'; // play
-import UsrPge_Subscribe from './usrPge_Subscribe.tsx'; // subscribe
-import { UsrPge_Followers,UsrPge_Following } from './usrPge_Fllw.tsx'; // followers/following
-import UsrPge_About from './usrPge_About.tsx'; // about
+import UsrPge_Live from './usrPge_Live.tsx'; 
+import UsrPge_Play from './usrPge_Play.tsx'; 
+import UsrPge_Story from './usrPge_Story.tsx'; 
+import UsrPge_Subscribe from './usrPge_Subscribe.tsx'; 
+import { UsrPge_Followers, UsrPge_Following } from './usrPge_Fllw.tsx'; 
+import UsrPge_About from './usrPge_About.tsx'; 
 
 export default function usrPge_fltr({ items, onFilterClick, selectedFilter: initialFilter }) {
   
@@ -22,20 +21,14 @@ export default function usrPge_fltr({ items, onFilterClick, selectedFilter: init
     'about',
   ];
 
-  const [selectedFilter, setSelectedFilter] = useState('post');
-
-const handleFilterChange = (filter) => {
-  setSelectedFilter(filter);
-};
-
+  const [selectedFilter, setSelectedFilter] = useState(initialFilter || 'post');
+  const [content, setContent] = useState(null);
+  const [isLoading, setIsLoading] = useState(false); // Track loading state
 
   useEffect(() => {
     // Fetch initial data based on initialFilter or default filter
     handleClick(selectedFilter);
   }, [selectedFilter]); // Depend on selectedFilter to re-run when it changes
-  const [content, setContent] = useState(null);
-  const [isLoading, setIsLoading] = useState(false); // Track loading state
-
 
   const handleClick = (filter) => {
     setSelectedFilter(filter);
@@ -80,18 +73,13 @@ const handleFilterChange = (filter) => {
     setIsLoading(false);
   };
 
-  useEffect(() => {
-    // Optional: Fetch initial data based on default filter
-    handleClick(selectedFilter);
-  }, []); // Empty dependency array to run only once on component mount
-
   return (
     <>
       <div style={{ margin: '0px 0px 20px 0px' }}>
         <ul className="hdr-fltr" style={{ margin: '8px 0px 0px' }}>
-          {Object.entries(filterItems).map(([key, value]) => (
+          {filterItems.map((value, index) => (
             <li
-              key={key}
+              key={index}
               style={{
                 backgroundColor: selectedFilter === value ? '#804949' : '',
                 color: selectedFilter === value ? '#fff' : '',
@@ -109,8 +97,7 @@ const handleFilterChange = (filter) => {
 				) : content ? (
 				<div className="cntr_wrp dI p10" style={{ width: '100%' }}>
 					{/* Render the fetched content here */}
-          {content ? React.createElement(content) : "No content available for this filter."}
-          
+          {React.createElement(content)}
 				</div>
 				) : (
         <div className="cntr_wrp dI p10">No content available for this filter.</div>
