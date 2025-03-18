@@ -2,12 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/": "pages/index.js",
   "/[username]": "pages/[username].js",
-  "/space": "pages/space.js",
-  "/history": "pages/history.js",
-  "/list": "pages/list.js",
-  "/wallet": "pages/wallet.js",
-  "/monetization": "pages/monetization.js",
-  "/ai": "pages/ai.js",
-  "/[username]/[filter]": "pages/[username]/[filter].js"
+  "/[username]/[filter]": "pages/[username]/[filter].js",
+  "/messages": "pages/messages.js",
+  "/ai": "pages/ai.js"
 }

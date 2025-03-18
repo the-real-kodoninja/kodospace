@@ -16,7 +16,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
