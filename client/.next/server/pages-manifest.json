@@ -4,7 +4,5 @@
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
   "/[username]": "pages/[username].js",
-  "/[username]/[filter]": "pages/[username]/[filter].js",
-  "/messages": "pages/messages.js",
-  "/ai": "pages/ai.js"
+  "/[username]/[filter]": "pages/[username]/[filter].js"
 }
